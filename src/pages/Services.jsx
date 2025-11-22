@@ -35,7 +35,7 @@ const services = [
     icon: LineChart,
   },
   {
-    id: "gm",
+    id: "global-market",
     title: "Global Market Access",
     subtitle: "International opportunities",
     desc:

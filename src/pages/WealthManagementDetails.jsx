@@ -34,33 +34,7 @@ export default function WealthManagementDetails() {
   {/* Soft Gradient Background */}
   <div className="absolute inset-0 bg-gradient-to-b from-slate-50 to-white pointer-events-none" />
 
-  {/* Floating Icons - Left */}
-  <div className="hidden md:flex flex-col gap-6 absolute left-6 top-10 opacity-15">
-    <div className="w-12 h-12 bg-white shadow-md rounded-xl flex items-center justify-center">
-      <svg className="w-7 h-7 text-blue-600" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
-        <path d="M3 3v18h18" /><path d="M18 17V9l-4 4-4-4v8" />
-      </svg>
-    </div>
-    <div className="w-12 h-12 bg-white shadow-md rounded-xl flex items-center justify-center">
-      <svg className="w-7 h-7 text-amber-500" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
-        <circle cx="12" cy="12" r="10" /><path d="M12 6v6l4 2" />
-      </svg>
-    </div>
-  </div>
 
-  {/* Floating Icons - Right */}
-  <div className="hidden md:flex flex-col gap-6 absolute right-6 top-10 opacity-15">
-    <div className="w-12 h-12 bg-white shadow-md rounded-xl flex items-center justify-center">
-      <svg className="w-7 h-7 text-green-600" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
-        <path d="M9 12l2 2 4-4" /><circle cx="12" cy="12" r="10" />
-      </svg>
-    </div>
-    <div className="w-12 h-12 bg-white shadow-md rounded-xl flex items-center justify-center">
-      <svg className="w-7 h-7 text-purple-600" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
-        <path d="M3 18v-6a9 9 0 0118 0v6" /><path d="M21 18a3 3 0 01-6 0" />
-      </svg>
-    </div>
-  </div>
 
   <div className="max-w-6xl mx-auto px-6 text-center relative z-10">
 
@@ -79,20 +53,7 @@ export default function WealthManagementDetails() {
       ensuring your wealth not only grows but remains secure for future generations.
     </p>
 
-    {/* Bottom Decorative Icons Row */}
-    <div className="hidden md:flex justify-center gap-10 mt-10 opacity-20">
-      <svg className="w-8 h-8 text-blue-500" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
-        <path d="M3 3v18h18" /><path d="M18 17V9l-4 4-4-4v8" />
-      </svg>
-
-      <svg className="w-8 h-8 text-rose-500" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
-        <circle cx="12" cy="12" r="10" /><path d="M12 6v6l4 2" />
-      </svg>
-
-      <svg className="w-8 h-8 text-green-600" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
-        <path d="M9 12l2 2 4-4" /><circle cx="12" cy="12" r="10" />
-      </svg>
-    </div>
+  
 
   </div>
 
