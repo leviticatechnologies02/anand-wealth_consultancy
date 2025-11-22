@@ -2,108 +2,152 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay, EffectFade, Pagination, Navigation } from "swiper/modules";
+
+import "swiper/css";
+import "swiper/css/effect-fade";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
+
 
 export default function HomeA() {
   return (
     <div className="min-h-screen bg-white text-slate-800">
 
       {/* ========================== HERO ========================== */}
-      <section className="bg-gradient-to-r from-sky-700 to-blue-800 text-white">
-        <div className="max-w-7xl mx-auto px-6 py-20 lg:py-28 flex flex-col lg:flex-row items-center gap-12">
+    <section className="bg-gradient-to-r from-sky-700 to-blue-800 text-white">
+  <div className="max-w-7xl mx-auto px-6 py-20 lg:py-28 flex flex-col lg:flex-row items-center gap-12">
 
-          {/* Left */}
-          <div className="w-full lg:w-1/2">
-            <h1 className="text-4xl md:text-5xl font-extrabold leading-tight">
-              Your Wealth, Secured.  
-              <br />
-              Your Future, Strengthened.
-            </h1>
+    {/* LEFT SIDE */}
+    <div className="w-full lg:w-1/2">
+      <h1 className="text-4xl md:text-5xl font-extrabold leading-tight">
+        Your Wealth, Secured.
+        <br />
+        Your Future, Strengthened.
+      </h1>
 
-            <p className="mt-5 text-lg text-slate-200 max-w-xl leading-relaxed">
-              At Anand Wealth Consultancy, we help individuals and businesses make smart, 
-              strategic, and sustainable financial choices — guiding you in managing, 
-              protecting, and growing your wealth in the most effective way possible.
-            </p>
+      <p className="mt-5 text-lg text-slate-200 max-w-xl leading-relaxed">
+        At Anand Wealth Consultancy, we help individuals and businesses make smart, 
+        strategic, and sustainable financial choices — guiding you in managing, 
+        protecting, and growing your wealth in the most effective way possible.
+      </p>
 
-            <div className="mt-8 flex flex-wrap gap-4">
-              <Link
-                to="/wealth"
-                className="inline-block bg-gradient-to-r from-yellow-400 to-amber-500 text-slate-900 px-6 py-3 rounded shadow-md font-semibold"
-              >
-                Start Your Wealth Journey
-              </Link>
+      <div className="mt-8 flex flex-wrap gap-4">
+        <Link
+          to="/wealth"
+          className="inline-block bg-gradient-to-r from-yellow-400 to-amber-500 text-slate-900 px-6 py-3 rounded shadow-md font-semibold"
+        >
+          Start Your Wealth Journey
+        </Link>
 
-              <a
-                href="/mnt/data/Untitled document (5).pdf"
-                className="inline-block px-6 py-3 border border-white/40 text-white bg-white/10 rounded hover:bg-white/20"
-              >
-                Download Brochure
-              </a>
-            </div>
-          </div>
-
-          {/* Right */}
-   {/* Right Side */}
-<div className="w-full lg:w-1/2 space-y-6">
-
-  {/* IMAGE SECTION */}
-  <div className="relative overflow-hidden rounded-xl shadow-2xl border border-white/20">
-    <img
-      src="/images/hero/image_1.png"   // 🔥 Replace with your real image path
-      alt="Wealth Consultant"
-      className="w-full h-[320px] md:h-[420px] object-cover"
-    />
-
-    {/* Optional Soft Overlay */}
-    <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
-  </div>
-
-  {/* STATS SECTION */}
-  <div className="bg-white/10 border border-white/20 rounded-xl p-6 shadow-xl backdrop-blur-sm">
-    <h3 className="text-xl font-semibold">Your Wealth at a Glance</h3>
-
-    <div className="mt-5 flex items-center justify-between">
-      <div>
-        <p className="text-sm text-slate-200">Estimated Growth (Example)</p>
-        <p className="mt-2 text-3xl font-bold text-white">₹ 12.4 Cr</p>
-      </div>
-
-      <div className="text-right">
-        <p className="text-sm text-slate-200">Annual Growth Rate</p>
-        <p className="mt-2 text-xl font-semibold text-amber-300">+18.2%</p>
+        <a
+          href="/mnt/data/Untitled document (5).pdf"
+          className="inline-block px-6 py-3 border border-white/40 text-white bg-white/10 rounded hover:bg-white/20"
+        >
+          Download Brochure
+        </a>
       </div>
     </div>
 
-    <p className="mt-6 text-sm text-slate-200 leading-relaxed">
-      With a client-first approach and expert market insights, we ensure your 
-      wealth works for you — not just today, but for the long term.
-    </p>
+    {/* RIGHT SIDE - FADE SLIDER */}
+    <div className="w-full lg:w-1/2">
+      <div className="relative rounded-xl overflow-hidden shadow-2xl border border-white/20">
+
+        {/* SWIPER */}
+        <Swiper
+          modules={[Autoplay, EffectFade, Pagination, Navigation]}
+          effect="fade"
+          slidesPerView={1}
+          loop={true}
+          autoplay={{ delay: 3500, disableOnInteraction: false }}
+          pagination={{ clickable: true }}
+          navigation={true}
+          className="h-[340px] md:h-[480px]"
+        >
+
+          {/* SLIDES */}
+          {[
+            "/images/hero/image_1.png",
+            "/images/hero/image_2.png",
+            "/images/hero/image_3.png"
+          ].map((src, i) => (
+            <SwiperSlide key={i}>
+              <div className="relative w-full h-full">
+                <img
+                  src={src}
+                  alt={`Slide ${i + 1}`}
+                  className="w-full h-full object-cover"
+                />
+
+                {/* OVERLAY STATS */}
+                <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/60 to-transparent p-4 md:p-6">
+                  <div className="flex items-center justify-between text-white">
+                    <div>
+                      <p className="text-xs md:text-sm text-gray-200">Estimated Growth</p>
+                      <p className="text-xl md:text-3xl font-bold">₹ 12.4 Cr</p>
+                    </div>
+
+                    <div className="text-right">
+                      <p className="text-xs md:text-sm text-gray-200">Annual Growth Rate</p>
+                      <p className="text-lg md:text-xl font-semibold text-amber-300">+18.2%</p>
+                    </div>
+                  </div>
+
+                  <p className="text-gray-200 mt-2 text-xs md:text-sm leading-relaxed">
+                    Smart, balanced strategies shaped to protect and grow your wealth.
+                  </p>
+                </div>
+              </div>
+            </SwiperSlide>
+          ))}
+        </Swiper>
+
+      </div>
+    </div>
+
   </div>
-
-</div>
-
-
-        </div>
-      </section>
+</section>
 
 
-      {/* ========================== ABOUT SECTION ========================== */}
-      <section className="max-w-7xl mx-auto px-6 py-16">
-        <h2 className="text-2xl font-bold text-slate-800">About Anand Wealth Consultancy</h2>
+{/* ========================== ABOUT SECTION ========================== */}
+<section className="bg-white py-20">
+  <div className="max-w-7xl mx-auto px-6">
 
-        <p className="mt-4 text-slate-600 leading-relaxed max-w-4xl">
-          Our core mission is to guide you in managing, protecting, and growing your wealth 
-          in the most effective way possible. We provide clear direction, expert insights, 
-          and tailored strategies to ensure that your wealth works for you — not just today, 
-          but far into the future.
-        </p>
+    {/* Title */}
+    <div className="mb-10">
+      <h2 className="text-3xl md:text-4xl font-extrabold text-blue-900">
+        About Anand Wealth Consultancy
+      </h2>
+      <div className="w-20 h-1 bg-gradient-to-r from-yellow-400 to-amber-500 mt-3"></div>
+    </div>
 
-        <p className="mt-4 text-slate-600 leading-relaxed max-w-4xl">
-          With a deep understanding of domestic and international financial markets, we help 
-          you navigate global opportunities with confidence. Your financial journey becomes 
-          more informed, more secure, and more growth-driven.
-        </p>
-      </section>
+    {/* CONTENT BLOCK */}
+    <div className="bg-gradient-to-br from-blue-50 via-white to-slate-100 p-8 rounded-xl shadow-md border border-blue-100">
+      <p className="text-lg text-slate-700 leading-relaxed">
+        At <strong className="text-blue-800">Anand Wealth Consultancy</strong>, our mission is to guide you in 
+        managing, protecting, and strategically growing your wealth with clarity and confidence.
+        Using expert insights and personalized strategies, we ensure your wealth works for you —
+        not just today but for every stage of your financial future.
+      </p>
+
+      <p className="mt-6 text-lg text-slate-700 leading-relaxed">
+        With deep expertise in both domestic and international markets, we help you navigate 
+        investment opportunities with a balanced approach. Our philosophy is simple — 
+        <span className="text-blue-800 font-semibold">smart, structured, and long-term wealth creation</span> 
+        built around your goals, risk appetite, and life ambitions.
+      </p>
+
+      <p className="mt-6 text-lg text-slate-700 leading-relaxed">
+        When you grow with knowledge, direction, and transparency, your financial journey becomes 
+        more informed, more secure, and more growth-driven — exactly what we stand for.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+
 
 
       {/* ========================== OUR FOCUS / SERVICES ========================== */}
