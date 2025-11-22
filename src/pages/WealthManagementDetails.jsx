@@ -7,7 +7,7 @@ export default function WealthManagementDetails() {
     <div className="bg-white text-slate-900">
 
       {/* ================= HERO ================= */}
-      <section className="bg-gradient-to-r from-blue-800 to-blue-900 text-white py-16 md:py-24">
+      <section className="bg-gradient-to-r from-blue-800 to-blue-900 text-white py-10 md:py-24">
         <div className="max-w-7xl mx-auto px-6">
           <h1 className="text-3xl md:text-5xl font-extrabold leading-tight">
             Wealth Management & Protection
@@ -29,16 +29,75 @@ export default function WealthManagementDetails() {
       </section>
 
       {/* ================= WHAT IS WM ================= */}
-      <section className="py-14 max-w-6xl mx-auto px-6">
-        <h2 className="text-2xl md:text-3xl font-bold text-slate-900">
-          What is Wealth Management & Protection?
-        </h2>
-        <p className="mt-4 text-slate-600 leading-relaxed max-w-3xl">
-          Wealth Management & Protection is a holistic, long-term strategy that integrates asset
-          growth, risk mitigation, tax efficiency, estate planning, and financial protection to
-          ensure your wealth not only grows—but stays secured for your future generations.
-        </p>
-      </section>
+     <section className="relative py-10 overflow-hidden">
+
+  {/* Soft Gradient Background */}
+  <div className="absolute inset-0 bg-gradient-to-b from-slate-50 to-white pointer-events-none" />
+
+  {/* Floating Icons - Left */}
+  <div className="hidden md:flex flex-col gap-6 absolute left-6 top-10 opacity-15">
+    <div className="w-12 h-12 bg-white shadow-md rounded-xl flex items-center justify-center">
+      <svg className="w-7 h-7 text-blue-600" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+        <path d="M3 3v18h18" /><path d="M18 17V9l-4 4-4-4v8" />
+      </svg>
+    </div>
+    <div className="w-12 h-12 bg-white shadow-md rounded-xl flex items-center justify-center">
+      <svg className="w-7 h-7 text-amber-500" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+        <circle cx="12" cy="12" r="10" /><path d="M12 6v6l4 2" />
+      </svg>
+    </div>
+  </div>
+
+  {/* Floating Icons - Right */}
+  <div className="hidden md:flex flex-col gap-6 absolute right-6 top-10 opacity-15">
+    <div className="w-12 h-12 bg-white shadow-md rounded-xl flex items-center justify-center">
+      <svg className="w-7 h-7 text-green-600" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+        <path d="M9 12l2 2 4-4" /><circle cx="12" cy="12" r="10" />
+      </svg>
+    </div>
+    <div className="w-12 h-12 bg-white shadow-md rounded-xl flex items-center justify-center">
+      <svg className="w-7 h-7 text-purple-600" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+        <path d="M3 18v-6a9 9 0 0118 0v6" /><path d="M21 18a3 3 0 01-6 0" />
+      </svg>
+    </div>
+  </div>
+
+  <div className="max-w-6xl mx-auto px-6 text-center relative z-10">
+
+    {/* Decorative Divider */}
+    <div className="flex justify-center mb-6">
+      <div className="w-20 h-1 bg-gradient-to-r from-blue-500 to-purple-600 rounded-full"></div>
+    </div>
+
+    <h2 className="text-2xl md:text-3xl font-bold text-slate-900">
+      What is Wealth Management & Protection?
+    </h2>
+
+    <p className="mt-4 text-slate-600 leading-relaxed max-w-3xl mx-auto text-lg">
+      Wealth Management & Protection is a holistic strategy that integrates asset growth,
+      risk mitigation, tax efficiency, estate planning, and long-term financial protection —
+      ensuring your wealth not only grows but remains secure for future generations.
+    </p>
+
+    {/* Bottom Decorative Icons Row */}
+    <div className="hidden md:flex justify-center gap-10 mt-10 opacity-20">
+      <svg className="w-8 h-8 text-blue-500" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+        <path d="M3 3v18h18" /><path d="M18 17V9l-4 4-4-4v8" />
+      </svg>
+
+      <svg className="w-8 h-8 text-rose-500" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+        <circle cx="12" cy="12" r="10" /><path d="M12 6v6l4 2" />
+      </svg>
+
+      <svg className="w-8 h-8 text-green-600" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+        <path d="M9 12l2 2 4-4" /><circle cx="12" cy="12" r="10" />
+      </svg>
+    </div>
+
+  </div>
+
+</section>
+
 
       {/* ================= KEY PILLARS ================= */}
       <section className="py-10 bg-slate-50 border-t">
@@ -95,7 +154,7 @@ export default function WealthManagementDetails() {
       </section>
 
       {/* ================= OUR PROCESS ================= */}
-      <section className="py-16 max-w-7xl mx-auto px-6">
+      <section className="py-10 max-w-7xl mx-auto px-6">
         <h3 className="text-2xl font-bold text-slate-900">How We Manage Your Wealth</h3>
         <p className="mt-3 text-slate-600 max-w-3xl">
           Our research-backed approach ensures disciplined, transparent, and results-driven wealth management.
@@ -146,7 +205,7 @@ export default function WealthManagementDetails() {
       </section>
 
       {/* ================= WHO IS THIS FOR ================= */}
-      <section className="py-14 bg-slate-50 border-t">
+      <section className="py-10 bg-slate-50 border-t">
         <div className="max-w-7xl mx-auto px-6">
           <h3 className="text-2xl font-bold text-slate-900">Who Is This Service For?</h3>
 
@@ -162,7 +221,7 @@ export default function WealthManagementDetails() {
       </section>
 
       {/* ================= CTA ================= */}
-      <section className="py-16 max-w-7xl mx-auto px-6">
+      <section className="py-10 max-w-7xl mx-auto px-6">
         <div className="rounded-2xl bg-gradient-to-r from-sky-50 to-white border p-10 flex flex-col md:flex-row items-center justify-between gap-6">
           <div>
             <h4 className="text-2xl font-bold text-slate-900">Ready to Protect & Grow Your Wealth?</h4>
