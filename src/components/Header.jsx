@@ -49,18 +49,18 @@ const Header = () => {
           <Link to="/" className="flex items-center space-x-3">
           <div className="w-12 h-12 md:w-16 md:h-16 rounded-full border-2 border-orange-200 overflow-hidden shadow-sm group-hover:shadow-md transition-all duration-300">
               <img
-                src="./images/image.png"
+                src="/images/image.png"
                 alt="Founder"
                 className="w-full h-full object-cover object-top"
               />
             </div>
             <img
-              src="./images/Anandhlogo.png"
+              src="/images/Anandhlogo.png"
               alt="Logo"
               className="w-10 h-12 object-contain"
             />
             <div className="flex flex-col">
-              <h1 className="text-xl font-bold text-blue-800">
+              <h1 className="text-md lg:text-xl font-bold text-blue-800">
                 <span className="text-yellow-500">ANAND </span>WEALTH
               </h1>
               <p className="text-xs text-gray-600 italic">Grow Your Future</p>

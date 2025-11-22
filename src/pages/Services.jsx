@@ -26,7 +26,7 @@ const services = [
     icon: Shield,
   },
   {
-    id: "is",
+    id: "smart-investments",
     title: "Smart Investment Strategies",
     subtitle: "Research-backed, goal-aligned",
     desc:

@@ -9,6 +9,7 @@ import AboutPage2 from "../pages/AboutPage_2";
 import ContactAdvancedWithMapBottomWealth from "../pages/ContactUs";
 import ServicesPage from "../pages/Services";
 import WealthManagementDetails from "../pages/WealthManagementDetails";
+import SmartInvestmentStrategies from "../pages/SmartInvestmentStrategies";
 
 export const HomeRoutes = () => {
   return (
@@ -23,6 +24,7 @@ export const HomeRoutes = () => {
             <Route path="/contact" element={<ContactAdvancedWithMapBottomWealth/>} />
             <Route path="/services" element={<ServicesPage />} />
             <Route path="/services/wealth-management" element={<WealthManagementDetails/>} />
+            <Route path="/services/smart-investments" element={<SmartInvestmentStrategies/>} />
           </Routes>
         </main>
         <Footer/>
