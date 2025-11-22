@@ -16,13 +16,14 @@ import TaxEfficientStrategies from "../pages/TaxEfficientStrategies";
 import PortfolioMonitoringRebalancing from "../pages/PortfolioMonitoringRebalancing";
 import RetirementPlanning from "../pages/RetirementPlanning";
 import NRIInternationalAdvisory from "../pages/NRIInternationalAdvisory";
+import ScrollToTop from "../components/ScrollToTop";
 
 export const HomeRoutes = () => {
   return (
     <BrowserRouter>
       <div className="min-h-screen bg-white">
         <Header />
-
+        <ScrollToTop/>
         <main>
           <Routes>
             <Route path="/" element={<HomeA />} />
