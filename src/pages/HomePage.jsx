@@ -17,7 +17,7 @@ export default function HomeA() {
 
       {/* ========================== HERO ========================== */}
     <section className="bg-gradient-to-r from-sky-700 to-blue-800 text-white">
-  <div className="max-w-7xl mx-auto px-6 py-20 lg:py-28 flex flex-col lg:flex-row items-center gap-12">
+  <div className="max-w-7xl mx-auto px-6 py-20 lg:py-10 flex flex-col lg:flex-row items-center gap-12">
 
     {/* LEFT SIDE */}
     <div className="w-full lg:w-1/2">
