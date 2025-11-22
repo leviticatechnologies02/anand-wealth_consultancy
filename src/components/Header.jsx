@@ -7,7 +7,7 @@ import { Link, useLocation } from "react-router-dom";
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
-  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+  const [openModal , setOpenModal] = useState(false);
   const location = useLocation();
 
   useEffect(() => {
@@ -110,12 +110,13 @@ const Header = () => {
             </div> */}
 
             {/* Consultation Button */}
-            <button
-          
-              className="px-6 py-3 rounded-lg text-base font-semibold bg-gradient-to-r from-blue-600 to-blue-700 text-white hover:scale-105 shadow-lg"
-            >
-              Get Consultation
-            </button>
+           <button
+  onClick={() => setOpenModal(true)}
+  className="px-6 py-3 rounded-lg text-base font-semibold bg-gradient-to-r from-blue-600 to-blue-700 text-white hover:scale-105 shadow-lg transition-all"
+>
+  Get Consultation
+</button>
+
           </nav>
 
           {/* Mobile Menu Button */}
@@ -172,7 +173,80 @@ const Header = () => {
           </div>
         )}
       </div>
+      {/* ======================= CONSULTATION MODAL ======================= */}
+{openModal && (
+  <div className="fixed inset-0 bg-black/40 backdrop-blur-sm flex items-center justify-center p-4 z-[999]"
+       onClick={() => setOpenModal(false)}>
+    <div
+      className="bg-white rounded-xl shadow-xl p-6 w-full max-w-lg relative animate-fadeIn"
+      onClick={(e) => e.stopPropagation()}
+    >
+      {/* Close Button */}
+      <button
+        onClick={() => setOpenModal(false)}
+        className="absolute top-3 right-3 text-slate-600 hover:text-slate-900 text-xl"
+      >
+        ✖
+      </button>
+
+      <h2 className="text-xl font-bold text-slate-900 mb-4">
+        Request a Consultation
+      </h2>
+      <p className="text-slate-600 text-sm mb-6">
+        Share your details and our wealth specialist will call you back.
+      </p>
+
+      {/* FORM */}
+      <form className="space-y-4">
+
+        <input
+          type="text"
+          placeholder="Full Name"
+          className="w-full p-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500"
+        />
+
+        <input
+          type="email"
+          placeholder="Email Address"
+          className="w-full p-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500"
+        />
+
+        <input
+          type="text"
+          placeholder="Phone Number"
+          className="w-full p-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500"
+        />
+
+        <textarea
+          rows="3"
+          placeholder="Tell us about your goals..."
+          className="w-full p-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 resize-none"
+        />
+
+        <button
+          type="submit"
+          className="w-full py-3 rounded-lg bg-gradient-to-r from-blue-600 to-blue-700 text-white font-semibold hover:scale-[1.02] transition"
+        >
+          Submit Request
+        </button>
+      </form>
+    </div>
+
+    {/* Animation */}
+    <style>{`
+      .animate-fadeIn {
+        animation: fadeIn 0.3s ease-out;
+      }
+      @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(20px); }
+        to { opacity: 1; transform: translateY(0); }
+      }
+    `}</style>
+  </div>
+)}
+
     </header>
+    
   );
 };
 
