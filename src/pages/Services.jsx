@@ -44,7 +44,7 @@ const services = [
     icon: Globe,
   },
   {
-    id: "pf",
+    id: "personalize-financial",
     title: "Personalized Financial Planning",
     subtitle: "Plans that fit your life",
     desc:
@@ -53,7 +53,7 @@ const services = [
     icon: ClipboardList,
   },
   {
-    id: "ta",
+    id: "tax-strategies",
     title: "Tax-efficient Strategies",
     subtitle: "Keep more of your returns",
     desc:
@@ -62,7 +62,7 @@ const services = [
     icon: Landmark,
   },
   {
-    id: "pm",
+    id: "portfolio-monitoring",
     title: "Portfolio Monitoring & Rebalancing",
     subtitle: "Active oversight",
     desc:
@@ -71,7 +71,7 @@ const services = [
     icon: BarChart3,
   },
   {
-    id: "rp",
+    id: "retirement-planning",
     title: "Retirement Planning",
     subtitle: "Income for your later years",
     desc:
@@ -80,7 +80,7 @@ const services = [
     icon: Wallet,
   },
   {
-    id: "nri",
+    id: "nri-advisory",
     title: "NRI & International Advisory",
     subtitle: "Cross-border expertise",
     desc:

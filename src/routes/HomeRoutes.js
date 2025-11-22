@@ -11,6 +11,11 @@ import ServicesPage from "../pages/Services";
 import WealthManagementDetails from "../pages/WealthManagementDetails";
 import SmartInvestmentStrategies from "../pages/SmartInvestmentStrategies";
 import GlobalMarketAccess from "../pages/GlobalMarketAccess";
+import PersonalizedFinancialPlanning from "../pages/PersonalizedFinancialPlanning";
+import TaxEfficientStrategies from "../pages/TaxEfficientStrategies";
+import PortfolioMonitoringRebalancing from "../pages/PortfolioMonitoringRebalancing";
+import RetirementPlanning from "../pages/RetirementPlanning";
+import NRIInternationalAdvisory from "../pages/NRIInternationalAdvisory";
 
 export const HomeRoutes = () => {
   return (
@@ -27,7 +32,12 @@ export const HomeRoutes = () => {
             <Route path="/services/wealth-management" element={<WealthManagementDetails/>} />
             <Route path="/services/smart-investments" element={<SmartInvestmentStrategies/>} />
             <Route path="/services/global-market" element={<GlobalMarketAccess/>} />
-            
+            <Route path="/services/personalize-financial" element={<PersonalizedFinancialPlanning/>} />
+            <Route path="/services/tax-strategies" element={<TaxEfficientStrategies />} />
+            <Route path="/services/portfolio-monitoring" element={<PortfolioMonitoringRebalancing/>} />
+            <Route path="/services/retirement-planning" element={<RetirementPlanning/>} />
+            <Route path="/services/nri-advisory" element={<NRIInternationalAdvisory />} />
+
           </Routes>
         </main>
         <Footer/>
