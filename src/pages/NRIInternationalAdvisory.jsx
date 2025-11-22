@@ -7,18 +7,30 @@ export default function NRIInternationalAdvisory() {
     <div className="bg-white text-slate-900">
 
       {/* HERO */}
-      <section className="bg-gradient-to-r from-indigo-800 to-blue-900 text-white py-16 md:py-24">
-        <div className="max-w-7xl mx-auto px-6">
-          <h1 className="text-3xl md:text-5xl font-extrabold">NRI & International Advisory</h1>
-          <p className="mt-6 text-lg md:text-xl text-indigo-100 max-w-3xl">
-            Specialized advisory for NRIs and global investors—covering taxation, compliance, repatriation, and India/global investing.
-          </p>
+<section className="bg-gradient-to-r from-indigo-800 to-blue-900 text-white py-16 md:py-24">
+  <div className="max-w-7xl mx-auto px-6">
 
-          <Link to="/contact" className="mt-8 px-6 py-3 bg-amber-400 text-slate-900 rounded-lg font-semibold hover:bg-amber-500">
-            Speak with an NRI Specialist
-          </Link>
-        </div>
-      </section>
+    <div className="flex flex-col items-start gap-6"> 
+      <h1 className="text-3xl md:text-5xl font-extrabold">
+        NRI & International Advisory
+      </h1>
+
+      <p className="text-lg md:text-xl text-indigo-100 max-w-3xl leading-relaxed">
+        Specialized advisory for NRIs and global investors—covering taxation, 
+        compliance, repatriation, and India/global investing.
+      </p>
+
+      <Link
+        to="/contact"
+        className="px-6 py-3 bg-amber-400 text-slate-900 rounded-lg font-semibold hover:bg-amber-500 inline-block"
+      >
+        Speak with an NRI Specialist
+      </Link>
+    </div>
+
+  </div>
+</section>
+
 
       {/* INTRO */}
       <section className="py-14 max-w-6xl mx-auto text-center px-6">
