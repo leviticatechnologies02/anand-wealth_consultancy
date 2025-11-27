@@ -134,11 +134,11 @@ const Footer = () => {
               <ul className="space-y-2 text-sm">
                 <li><Link to="/" className="hover:text-yellow-400">Home</Link></li>
                 <li><Link to="/about" className="hover:text-yellow-400">About</Link></li>
-                <li><Link to="/wealth" className="hover:text-yellow-400">Wealth Services</Link></li>
+                <li><Link to="/services" className="hover:text-yellow-400">Wealth Services</Link></li>
                 <li><Link to="/contact" className="hover:text-yellow-400">Contact</Link></li>
                 <li>
                   <a
-                    href="/mnt/data/Untitled document (5).pdf"
+                    href="#"
                     className="hover:text-yellow-400"
                   >
                     Download Brochure

@@ -23,14 +23,14 @@ export default function AboutPage2() {
 
               <div className="mt-8 flex flex-wrap gap-4">
                 <Link
-                  to="/wealth"
+                  to="/services"
                   className="inline-block bg-gradient-to-r from-yellow-400 to-amber-500 text-slate-900 px-6 py-3 rounded shadow font-semibold"
                 >
                   Explore Services
                 </Link>
 
                 <a
-                  href="/mnt/data/Untitled document (5).pdf"
+                  href="#"
                   className="inline-block px-6 py-3 border border-white/40 rounded text-white bg-white/10 hover:bg-white/20"
                 >
                   Download Brochure
@@ -104,33 +104,33 @@ export default function AboutPage2() {
           {/* RIGHT — How We Work */}
           <div className="bg-white p-8 rounded-xl shadow-xl border border-slate-100 relative">
             <h3 className="text-2xl font-bold text-slate-900 flex items-center gap-2">
-              <span className="w-2 h-2 bg-blue-600 rounded-full"></span>
+              
               How We Work
             </h3>
 
             <ul className="mt-6 space-y-4 text-slate-700 text-lg">
-              <li className="flex items-start gap-3">
-                <span className="text-blue-600 text-xl">✔</span>
+              <li className="flex items-center gap-3">
+             <span className="w-2 h-2 bg-blue-600 rounded-full"></span>
                 Financial profiling & personalized risk analysis
               </li>
 
-              <li className="flex items-start gap-3">
-                <span className="text-blue-600 text-xl">✔</span>
+              <li className="flex items-center gap-3">
+               <span className="w-2 h-2 bg-blue-600 rounded-full"></span>
                 Goal-based investment & portfolio allocation
               </li>
 
-              <li className="flex items-start gap-3">
-                <span className="text-blue-600 text-xl">✔</span>
+              <li className="flex items-center gap-3">
+<span className="w-2 h-2 bg-blue-600 rounded-full"></span>
                 Tax-efficient wealth planning & protection
               </li>
 
-              <li className="flex items-start gap-3">
-                <span className="text-blue-600 text-xl">✔</span>
+              <li className="flex items-center gap-3">
+              <span className="w-2 h-2 bg-blue-600 rounded-full"></span>
                 Continuous portfolio monitoring & refinements
               </li>
 
-              <li className="flex items-start gap-3">
-                <span className="text-blue-600 text-xl">✔</span>
+              <li className="flex items-center gap-3">
+            <span className="w-2 h-2 bg-blue-600 rounded-full"></span>
                 Transparent updates & research-based guidance
               </li>
             </ul>
@@ -233,8 +233,8 @@ export default function AboutPage2() {
               "Access to domestic and international investment avenues",
               "Long-term planning focused on sustainable wealth creation",
             ].map((item, index) => (
-              <div key={index} className="flex items-start gap-3">
-                <span className="text-blue-600 text-2xl leading-none">✔</span>
+              <div key={index} className="flex items-center gap-3">
+               <span className="w-2 h-2 bg-blue-600 rounded-full"></span>
                 <p>{item}</p>
               </div>
             ))}
@@ -288,11 +288,11 @@ export default function AboutPage2() {
               </h3>
 
               <p className="mt-4 text-slate-600 leading-relaxed">
-                “Our mission has always been clear — to help individuals and
+                Our mission has always been clear to help individuals and
                 businesses make informed, ethical, and strategic financial
                 decisions. True wealth is not just about accumulation; it is
                 about responsibility, clarity, disciplined planning, and
-                long-term prosperity.”
+                long-term prosperity.
               </p>
 
               <p className="mt-4 text-slate-600 leading-relaxed">
@@ -300,12 +300,12 @@ export default function AboutPage2() {
                 and guiding clients through economic cycles, our approach
                 focuses on integrity, research, and sustainable financial
                 growth. Every strategy we build is rooted in trust,
-                transparency, and the timeless principle — ‘Dharmo Rakshati
-                Rakshitah’: righteousness protects those who protect it.
+                transparency, and the timeless principle ‘Dharmo Rakshati
+                Rakshitah’ righteousness protects those who protect it.
               </p>
 
               <p className="mt-5 text-slate-800 font-medium text-lg">
-                — Anand, Founder & Chairman, Anand Wealth Consultancy
+                 Anand, Founder & Chairman, Anand Wealth Consultancy
               </p>
             </div>
           </div>

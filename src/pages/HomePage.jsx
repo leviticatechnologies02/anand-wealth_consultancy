@@ -35,14 +35,14 @@ export default function HomeA() {
 
       <div className="mt-8 flex flex-wrap gap-4">
         <Link
-          to="/wealth"
+          to="/contact"
           className="inline-block bg-gradient-to-r from-yellow-400 to-amber-500 text-slate-900 px-6 py-3 rounded shadow-md font-semibold"
         >
           Start Your Wealth Journey
         </Link>
 
         <a
-          href="/mnt/data/Untitled document (5).pdf"
+          href="#"
           className="inline-block px-6 py-3 border border-white/40 text-white bg-white/10 rounded hover:bg-white/20"
         >
           Download Brochure
@@ -127,20 +127,20 @@ export default function HomeA() {
       <p className="text-lg text-slate-700 leading-relaxed">
         At <strong className="text-blue-800">Anand Wealth Consultancy</strong>, our mission is to guide you in 
         managing, protecting, and strategically growing your wealth with clarity and confidence.
-        Using expert insights and personalized strategies, we ensure your wealth works for you —
+        Using expert insights and personalized strategies, we ensure your wealth works for you
         not just today but for every stage of your financial future.
       </p>
 
       <p className="mt-6 text-lg text-slate-700 leading-relaxed">
         With deep expertise in both domestic and international markets, we help you navigate 
-        investment opportunities with a balanced approach. Our philosophy is simple — 
-        <span className="text-blue-800 font-semibold">smart, structured, and long-term wealth creation</span> 
+        investment opportunities with a balanced approach. Our philosophy is simple 
+        <span className="text-blue-800 font-semibold"> smart, structured, and long-term wealth creation </span> 
         built around your goals, risk appetite, and life ambitions.
       </p>
 
       <p className="mt-6 text-lg text-slate-700 leading-relaxed">
         When you grow with knowledge, direction, and transparency, your financial journey becomes 
-        more informed, more secure, and more growth-driven — exactly what we stand for.
+        more informed, more secure, and more growth-driven exactly what we stand for.
       </p>
     </div>
 
