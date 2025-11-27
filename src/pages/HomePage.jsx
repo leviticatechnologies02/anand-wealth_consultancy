@@ -212,7 +212,7 @@ export default function HomeA() {
         Build Your Wealth with Confidence
       </h2>
       <p className="mt-4 text-gray-600 text-lg max-w-2xl mx-auto">
-        The financial world is complex — but your wealth journey doesn’t have to be.
+        The financial world is complex but your wealth journey doesn’t have to be.
       </p>
     </div>
 
@@ -223,7 +223,7 @@ export default function HomeA() {
       <div className="p-8 rounded-xl bg-gradient-to-br from-blue-50 to-blue-100 border border-blue-200 shadow">
         <h3 className="text-2xl font-bold text-blue-900 mb-4">The Challenge</h3>
         <p className="text-gray-700 leading-relaxed">
-          Today’s financial world is volatile, data-heavy, and unpredictable. 
+          Today’s financial world is volatile, data heavy, and unpredictable. 
           Individuals and businesses struggle with overwhelming information, unclear strategy, 
           and difficulty identifying the right investment opportunities.
         </p>
@@ -241,7 +241,7 @@ export default function HomeA() {
         <h3 className="text-2xl font-bold text-yellow-700 mb-4">Our Solution</h3>
         <p className="text-gray-700 leading-relaxed">
           At <strong>Anand Wealth Consultancy</strong>, we simplify financial decisions with personalized 
-          advisory, research-backed planning, and clear long-term strategy — always centered around 
+          advisory, research backed planning, and clear long-term strategy always centered around 
           your goals and your risk appetite.
         </p>
         <ul className="mt-4 space-y-2 text-gray-700 list-disc list-inside">
@@ -328,13 +328,13 @@ export default function HomeA() {
       {
         initials: "SI",
         title: "Smart Investment Solutions",
-        desc: "Access diversified, research-backed investment opportunities across both domestic and international markets.",
+        desc: "Access diversified, research backed investment opportunities across both domestic and international markets.",
         gradient: "from-amber-400 to-amber-500",
       },
       {
         initials: "PS",
         title: "Personalized Service, Lasting Relationships",
-        desc: "Receive clear, actionable advice rooted in your unique goals, risk appetite, and life ambitions—no two clients are ever the same.",
+        desc: "Receive clear, actionable advice rooted in your unique goals, risk appetite, and life ambitions no two clients are ever the same.",
         gradient: "from-orange-300 to-orange-400",
       },
       {
